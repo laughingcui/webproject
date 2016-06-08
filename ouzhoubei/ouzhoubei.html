@@ -1,0 +1,285 @@
+<!DOCTYPE html>
+<html>
+<head>
+
+<meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+<script type="text/javascript" src="js/jquery.js"></script>
+<title></title>
+<style>
+html{
+	
+	width: 100%;
+	height: 100%;
+	margin: 0px;
+	padding: 0px;
+}
+body{
+				
+				position: absolute;
+				background-color:#fccc38;
+				width: 100%;
+				height: 100%;
+				background-image:url(images/o1.png);
+				background-size:100% 100%;
+				background-repeat: no-repeat;
+				background-position: center;
+				padding: 0px;
+				margin: 0px;
+				z-index: -1;
+			}
+.mainbox1{ width:94%; height:13%; margin-left:auto; margin-right:auto;background-image:url(images/o2.png);
+				background-size:100% 100%;
+				background-repeat: no-repeat;
+				background-position: center; margin-top:38%;}
+.total{ width:40%; height:28%;margin-left:auto; margin-right:auto;  text-align:center; float:left; margin-top:7%; margin-left:30%; font-size:1.2rem; color:#f0ec33;}
+.btn{ float:left; width:16%; height:26%; margin-top:7%; margin-left:11%;}
+.massege{ width:63%; height:20%; float:left;background-image:url(images/o4.png);background-size:100% 100%;
+				background-repeat: no-repeat;
+				background-position: center;text-align:center; padding-top:2%; margin-left:19%; font-size:0.55rem; color:#FFF; margin-top:1%;}
+.mainbox2{width:94%; height:34%; margin-left:auto; margin-right:auto;background-image:url(images/05.png);
+				background-size:100% 100%;
+				background-repeat: no-repeat;
+				background-position: center; margin-top:1.5%;}
+.main1{ height:30%; width:25%; background-color:#205588; opacity:0.8; margin-left:4%; float:left; margin-top:4%;}
+.masg{ width:35%; height:10%;background-image:url(images/06.png); float:left; margin-top:6%; margin-left:2%;font-size:0.55rem; color:#FFF; text-align:center;}
+.main2{ height:30%; width:25%; background-color:#205588; opacity:0.8; margin-left:4%; float:left; margin-top:4%;}
+.team{ width:100%; height:26%; text-align:center; font-size:0.7rem; color:#FFF;}
+.main3{ width:25%; height:9%; float:left; background-color:#ff6e03; text-align:center; color:#FFF; font-size:0.9rem; padding-top:2%; margin-top:4%; margin-left:4%;}
+.main4{ width:25%; height:10%; float:left; background-color:#48c801; text-align:center; color:#FFF; font-size:0.9rem; padding-top:2%; margin-top:4%; margin-left:8%;}
+.main5{ width:25%; height:10%; float:left; background-color:#119bff; text-align:center; color:#FFF; font-size:0.9rem; padding-top:2%; margin-top:4%; margin-left:8%;}
+.btn2{ width:35%; height:10%; background-color:#e8403e;float:left;text-align:center; color:#FFF; font-size:0.9rem; padding-top:1%; margin-top:5%; margin-left:32%;}
+.bottom{ width:94%; height:26%;margin-left:auto; margin-right:auto;background-image:url(images/o15.png);
+				background-size:100% 100%;
+				background-repeat: no-repeat;
+				background-position: center; margin-top:2%;}
+.mark
+{
+	position: fixed;
+	z-index:6;
+	left: 0;
+	right: 0;
+	top: 0;
+	bottom: 0;
+	background: rgba(0, 0, 0, 0.37);display:none; 
+}
+.dialog_box1
+{   background-image:url(images/o27.png);
+    background-size:100% 100%;
+    background-repeat: no-repeat;
+	width:84%;
+	height:33%;
+	margin-left:8%;
+	margin-top:53%; 
+	display:block;
+	display:none;
+	 
+	
+}
+.cancle{ width:38%; height:auto; margin-top:46%; float:left; margin-left:5%;}
+.cancle2{ width:38%; height:auto; margin-top:46%; float:left; margin-left:14%;}
+.dialog_box2
+{   background-image:url(images/o26.png);
+    background-size:100% 100%;
+    background-repeat: no-repeat;
+	width:84%;
+	height:28%;
+	margin-left:8%;
+	margin-top:53%;display:none;
+	
+}
+.dialog_box3
+{   background-image:url(images/o25.png);
+    background-size:100% 100%;
+    background-repeat: no-repeat;
+	width:84%;
+	height:31%;
+	margin-left:8%;
+	margin-top:53%;display:none; 	
+}
+.dialog_box4
+{   background-image:url(images/o23.png);
+    background-size:100% 100%;
+    background-repeat: no-repeat;
+	width:84%;
+	height:58%;
+	margin-left:8%;
+	margin-top:30%;display:none; 
+	
+}
+.dialog_box6
+{   
+	width:100%;
+	height:100%;
+	display:none;
+  
+	
+}
+.dialog_box5{ width:100%;display:none;  }
+.dialog5
+{   margin-left:auto;
+    margin-right:auto;
+    background-image:url(images/50.png);
+    background-size:100% 100%;
+    background-repeat: no-repeat;
+	width:88%;
+	margin-left:6%;
+	margin-top:33%;
+}
+.dialog_box5 a{font-size:0.9em; float:left; margin-left:10%; margin-top:2%; color:red; visibility:hidden; }
+.tips2{ font-size:0.75rem; margin-left:8%;color:#926600; font-weight:bold; }
+.numberbox{width:60%; height:40px;margin-left:12%;margin-top:20%;}
+.passwordbox{width:74%; height:40px;margin-left:12%;margin-top:8%; margin-bottom:5%; }
+.text{ float:left; font-size:1.1em; margin-top:-3%; margin-left:4%; font-weight:bold; color:#926600;
+      height:15%; width:40%; }
+.btn5{ width:39%; height:39px; margin-left:29%; margin-bottom:10%; margin-top:4%;}
+
+.overflowH{ overflow:hidden;}
+.current{border: solid 1px #FFFFFF; }
+</style>
+</head>
+<body>
+<div id="tanchu" class="mark">
+   <div  id="mengban1" class="dialog_box1">
+      <div class="cancle">
+         <img src="images/o29.png" style=" width:100%;">
+      </div>
+      <div class="cancle2">
+         <img src="images/o28.png" style=" width:100%;">
+      </div>     
+   </div>
+   <div  id="mengban2" class="dialog_box2">  
+   </div>
+   <div  id="mengban3" class="dialog_box3">  
+   </div>
+   <div  id="mengban4" class="dialog_box4">
+        <img src="images/o30.png" style=" width:42%; height:auto; margin-left:30%; margin-top:45%;">
+       <div class="press"  style="width:52%; height:auto;">
+          <img src="images/o24.png" style=" width:100%; margin-top:15%; margin-left:47%;">
+       </div>  
+   </div>
+    <div  id="mengban6" class="dialog_box6">
+       <img src="images/o32.png" style=" width:100%; height:100%;"> 
+   </div>
+   <div  class="dialog_box5">
+        <div class="dialog5 overflowH">
+              
+               <div class="numberbox">
+                   <input type="text" value="请输入手机号码" onfocus="if(value=='请输入手机号码') {value=''}" onblur="if (value=='') {value='请输入手机号码'}" style="width:100%; height:100%; 
+                   background-color:transparent;
+                   background-image:url(images/49.png);
+                   background-size:100% 100%;
+                   background-repeat: no-repeat;
+                   background-position: center;
+                   border:none; color:#FFF; font-size:1rem; padding-left:14%;" >             
+                </div>
+                  <a>非电信号码无需获取验证码，可直接绑定</a>
+               <div class="passwordbox ">
+                     <input type="text" value="验证码" onfocus="if(value=='验证码') {value=''}" onblur="if (value=='') {value='验证码'}"  style="width:34%; height:100%; 
+                     background-color:transparent;
+                     background-image:url(images/51.png);
+                     background-size:100% 100%;
+                     background-repeat: no-repeat;
+                     background-position: center;
+                     border:none; color:#FFF; font-size:1rem; float:left;padding-left:14%;"> 
+                     <div class="text">
+                        <p style=" margin-left:2%;">获取验证码</p>
+                        <hr style=" width:92%; background-color:#926600; height:2px; margin-top:-12%; margin-left:2%; border:none;">
+                     </div> 
+               </div>
+               <div class="tips2">
+                  只有绑定手机号码，才能收到中奖流量并兑换使用       
+               </div>
+               <div class="btn5">
+                 <img src="images/52.png" style="width:100%; height:100%;">
+               </div>
+               
+                   
+         </div>      
+    </div>
+</div>
+<div class="mainbox1">
+    <div class="total">
+          10810&nbsp;&nbsp;MB    
+    </div>
+    <div class="btn">
+       <img src="images/03.png" style=" width:100%; height:100%;">   
+    </div>
+    <div class="massege">
+       189xxxx3195 参与竞猜并分享，为奖池加了10M
+    </div>
+    <a href=""  style=" font-size:0.8rem;color:#f0ec33; margin-top:2%; float:left;">往期查看</a>
+</div>
+<div  class="mainbox2">
+   <div class="main1">
+      <img src="images/o17.png" style="width:100%; height:74%;">
+      <div class="team">
+          法国
+      </div>  
+   </div>
+   <div class="masg">
+       2016年7月7日  03:00</br>
+        比赛开始截止竞猜
+   </div>
+   <div class="main2">
+     <img src="images/o18.png" style="width:100%; height:74%;"> 
+     <div class="team">
+          意大利
+      </div> 
+   </div>
+   <div class="main3">
+       <span>法国</span>胜 
+   </div>
+    <div class="main4">
+       平局
+   </div>
+    <div class="main5">
+       <span>意大利</span>胜 
+   </div>
+   <div class="btn2">
+      立即提交
+   </div>
+    <a href="" style=" font-size:0.7rem; float:left; color:#f0ec33; margin-top:4%; margin-left:32%; text-decoration:none;">是球迷，就来发帖聊球>></a>
+</div>
+<div class="bottom">
+
+</div>
+<script type="text/javascript">
+				$(function(){
+					
+		 $(".main3").click(
+          function(){
+		 $(this).addClass("current").siblings()
+		 .removeClass("current");  
+		 
+		  }
+
+)
+		 $(".main4").click(
+          function(){
+		 $(this).addClass("current").siblings()
+		 .removeClass("current");  
+		 
+		  }
+
+)
+		$(".main5").click(
+          function(){
+		 $(this).addClass("current").siblings()
+		 .removeClass("current");  
+		 
+		  }
+
+)
+					
+				})
+				$(".cancle").click(function(){document.getElementById("tanchu").style.visibility ="hidden";})
+				$(".cancle2").click(function(){$(".dialog_box1").css("display",'none');$(".dialog_box6").css("display",'block');})
+				$(".dialog_box6").click(function(){document.getElementById("tanchu").style.visibility ="hidden";})
+				$(".dialog_box2").click(function(){document.getElementById("tanchu").style.visibility ="hidden";})
+				$(".dialog_box3").click(function(){document.getElementById("tanchu").style.visibility ="hidden";})
+</script>
+</body>
+</html>
